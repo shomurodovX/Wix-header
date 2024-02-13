@@ -1,12 +1,279 @@
-~<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/responsive.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
   </head>
   <body>
+    <header>
+      <div class="header_wrapper">
+        <div class="header_left">
+          <a href="#" class="header_logo">
+            <img src="./images/logo.svg" alt="" />
+          </a>
+          <ul class="header_links">
+            <li class="link1">
+              <a class="mysite_btn" href="#"
+                >My Site 1
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  width="24px"
+                  height="24px"
+                >
+                  <path
+                    d="M8.14644661,10.1464466 C8.34170876,9.95118446 8.65829124,9.95118446 8.85355339,10.1464466 L12.4989857,13.7981758 L16.1502401,10.1464466 C16.3455022,9.95118446 16.6620847,9.95118446 16.8573469,10.1464466 C17.052609,10.3417088 17.052609,10.6582912 16.8573469,10.8535534 L12.4989857,15.2123894 L8.14644661,10.8535534 C7.95118446,10.6582912 7.95118446,10.3417088 8.14644661,10.1464466 Z"
+                  ></path></svg
+              ></a>
+            </li>
+            <ul class="dropdown1">
+              <li><a href="#">App Market</a></li>
+              <li><a href="#">Новости и обновления</a></li>
+              <li><a href="#">Сайты для вдохновения</a></li>
+              <li><a href="#">Курсы и уроки</a></li>
+            </ul>
+            <li class="dropdown_btn">
+              <a href="#"
+                >Возможности
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  width="24px"
+                  height="24px"
+                >
+                  <path
+                    d="M8.14644661,10.1464466 C8.34170876,9.95118446 8.65829124,9.95118446 8.85355339,10.1464466 L12.4989857,13.7981758 L16.1502401,10.1464466 C16.3455022,9.95118446 16.6620847,9.95118446 16.8573469,10.1464466 C17.052609,10.3417088 17.052609,10.6582912 16.8573469,10.8535534 L12.4989857,15.2123894 L8.14644661,10.8535534 C7.95118446,10.6582912 7.95118446,10.3417088 8.14644661,10.1464466 Z"
+                  ></path></svg
+              ></a>
+              <ul class="dropdown">
+                <li><a href="#">App Market</a></li>
+                <li><a href="#">Новости и обновления</a></li>
+                <li><a href="#">Сайты для вдохновения</a></li>
+                <li><a href="#">Курсы и уроки</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Помощь</a></li>
+            <li><a href="#">Нанять специалиста</a></li>
+          </ul>
+        </div>
+        <div class="header_right">
+          <div class="icons">
+            <div class="inbox">
+              <a href="#" class="inbox_btn"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  width="24"
+                  height="24"
+                  data-hook="inbox-widget-icon"
+                  class="ARbo+"
+                >
+                  <path
+                    d="M18,5 C19.1045695,5 20,5.8954305 20,7 L20,15 C20,16.1045695 19.1045695,17 18,17 L12,17 L8.62469505,19.700244 C8.19343311,20.0452535 7.56414074,19.9753321 7.21913119,19.5440702 C7.07728075,19.3667572 7,19.1464466 7,18.9193752 L7,17 L6,17 C4.8954305,17 4,16.1045695 4,15 L4,7 C4,5.8954305 4.8954305,5 6,5 L18,5 Z M18,6 L6,6 C5.48716416,6 5.06449284,6.38604019 5.00672773,6.88337887 L5,7 L5,15 C5,15.5128358 5.38604019,15.9355072 5.88337887,15.9932723 L6,16 L8,16 L8,18.9193752 L11.6492189,16 L18,16 C18.5128358,16 18.9355072,15.6139598 18.9932723,15.1166211 L19,15 L19,7 C19,6.48716416 18.6139598,6.06449284 18.1166211,6.00672773 L18,6 Z"
+                  ></path></svg
+              ></a>
+              <div class="inbox_dropdown">
+                <div class="inbox_top">
+                  <h4>Inbox</h4>
+                  <div class="inbox_links">
+                    <a href="#">Mark All as Read</a>
+                    <span class="line3"></span>
+                    <a href="#">Go to Inbox</a>
+                  </div>
+                </div>
+                <div class="messages">
+                  <div class="messages_top">
+                    <h5>All Messages</h5>
+                  </div>
+                  <div class="all_messages">
+                    <div class="text">
+                      <h4>You’re Up to Date!</h4>
+                      <p>
+                        The next time you or one of your contacts sends a
+                        message, it will show here.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="notification">
+              <a href="#" class="notif_btn"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  width="24"
+                  height="24"
+                >
+                  <path
+                    d="M11.5,4 C12.3284271,4 13,4.67157288 13,5.5 L13,6.208 L13.1928659,6.26644975 C15.4021227,6.9794161 17,9.05310592 17,11.5 L17,14.381966 C17,15.0636597 17.5141144,15.4674835 17.7236068,15.5527864 C18.6312256,16.0112457 19,16.8789673 19,17.618034 L19,18 C18.999914,18.5522512 18.5522511,18.9999525 18,19.000086 L13.9499027,19.0004345 L13.9499027,19.0004345 C13.7180997,20.1413382 12.7093254,21 11.5,21 C10.2906746,21 9.28190033,20.1413382 9.05009729,19.0004345 L5,19.000086 C4.44774885,18.9999525 4.00008604,18.5522512 4,18 L4,17.618034 L4,17.618034 C4,16.8017489 4.4304466,16.0508527 5.12384427,15.6363588 C5.70794809,15.3546774 6,14.9365465 6,14.381966 L6,11.5 C6,8.98221115 7.69181046,6.85956581 10.0006454,6.20685 L10,5.5 C10,4.67157288 10.6715729,4 11.5,4 Z M12.9143985,19.000703 L10.0856015,19.000703 C10.2917181,19.5829319 10.8471533,20 11.5,20 C12.1528467,20 12.7082819,19.5829319 12.9143985,19.000703 Z M11.5,5 C11.2238576,5 11,5.22385763 11,5.5 L11.000297,7.02743156 C8.7501788,7.27601865 7,9.18362124 7,11.5 L7,14.381966 C7,15.1982511 6.5695534,15.9491473 5.87615573,16.3636412 L5.7609788,16.4232259 C5.47658468,16.5798721 5,16.9239115 5,17.618034 L5,18 L18,18 L18,17.618034 C18,16.9215546 17.5177307,16.5793152 17.2763932,16.4472136 C16.5953522,16.1302643 16,15.3188477 16,14.381966 L16,11.5 C16,9.18396594 14.2503421,7.2765864 12.0007074,7.02754265 L12,5.5 C12,5.22385763 11.7761424,5 11.5,5 Z"
+                  ></path></svg
+              ></a>
+
+              <div class="notif_dropdown">
+                <div class="notif_top">
+                  <h4>Notifications</h4>
+                  <div class="inbox_links">
+                    <a href="#">Settings</a>
+                  </div>
+                </div>
+                <div class="all_notif">
+                  <div class="text">
+                    <img src="./images/notification.png" alt="" />
+                    <h4>Get notified here</h4>
+                    <p>
+                      This is where you’ll see all your notifications from site
+                      visitors, apps and more.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="line"></span>
+          <div class="account">
+            <div class="account_img">
+              <img src="./images/user_img.png" alt="" />
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="24px"
+                height="24px"
+              >
+                <path
+                  d="M8.14644661,10.1464466 C8.34170876,9.95118446 8.65829124,9.95118446 8.85355339,10.1464466 L12.4989857,13.7981758 L16.1502401,10.1464466 C16.3455022,9.95118446 16.6620847,9.95118446 16.8573469,10.1464466 C17.052609,10.3417088 17.052609,10.6582912 16.8573469,10.8535534 L12.4989857,15.2123894 L8.14644661,10.8535534 C7.95118446,10.6582912 7.95118446,10.3417088 8.14644661,10.1464466 Z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="account_dropdown">
+            <div class="account_top">
+              <img src="./images/user_img.png" alt="" />
+              <h4 class="account_email">shomurodowx@gmail.com</h4>
+            </div>
+            <ul class="account_links">
+              <div class="account_settings">
+                <a href="#">Настройка аккаунта</a>
+              </div>
+
+              <li><a href="#">Домены</a></li>
+              <li><a href="#">Почта для бизнеса</a></li>
+              <li><a href="#">Ваучеры</a></li>
+              <li><a href="#">История платежей</a></li>
+              <li><a href="#">Премиум-подписки</a></li>
+              <li><a href="#">Способы оплаты</a></li>
+              <ul class="links_in">
+                <li>
+                  <a href="#"
+                    >Создать новый сайт
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      width="24"
+                      height="24"
+                      class="s3MNud_"
+                      data-hook="suffix-icon"
+                    >
+                      <path
+                        d="M11,6 L11,7 L7,7 C6.44771525,7 6,7.44771525 6,8 L6,17 C6,17.5522847 6.44771525,18 7,18 L16,18 C16.5522847,18 17,17.5522847 17,17 L17,13 L18,13 L18,17 C18,18.1045695 17.1045695,19 16,19 L7,19 C5.8954305,19 5,18.1045695 5,17 L5,8 C5,6.8954305 5.8954305,6 7,6 L11,6 Z M18,6 L18,10 L17,10 L17,7.75 L11.9040467,12.8434838 C11.69694,13.0505906 11.3611535,13.0505906 11.1540467,12.8434838 C10.94694,12.636377 10.94694,12.3005906 11.1540467,12.0934838 L16.25,7 L14,7 L14,6 L18,6 Z"
+                      ></path></svg
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Помощь
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      width="24"
+                      height="24"
+                      class="s3MNud_"
+                      data-hook="suffix-icon"
+                    >
+                      <path
+                        d="M11,6 L11,7 L7,7 C6.44771525,7 6,7.44771525 6,8 L6,17 C6,17.5522847 6.44771525,18 7,18 L16,18 C16.5522847,18 17,17.5522847 17,17 L17,13 L18,13 L18,17 C18,18.1045695 17.1045695,19 16,19 L7,19 C5.8954305,19 5,18.1045695 5,17 L5,8 C5,6.8954305 5.8954305,6 7,6 L11,6 Z M18,6 L18,10 L17,10 L17,7.75 L11.9040467,12.8434838 C11.69694,13.0505906 11.3611535,13.0505906 11.1540467,12.8434838 C10.94694,12.636377 10.94694,12.3005906 11.1540467,12.0934838 L16.25,7 L14,7 L14,6 L18,6 Z"
+                      ></path></svg
+                  ></a>
+                </li>
+              </ul>
+            </ul>
+            <div class="account_bottom">
+              <div class="account_lang">
+                <div class="lang_btn">
+                  <a href="#"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      width="24px"
+                      height="24px"
+                    >
+                      <path
+                        d="M4.42676427,15 L7.19778729,15 C7.069206,14.209578 7,13.3700549 7,12.5 C7,11.6299451 7.069206,10.790422 7.19778729,10 L4.42676427,10 C4.15038555,10.7819473 4,11.6234114 4,12.5 C4,13.3765886 4.15038555,14.2180527 4.42676427,15 Z M4.86504659,16 C5.7403587,17.6558985 7.21741102,18.9446239 9.0050441,19.5750165 C8.30729857,18.6953657 7.74701714,17.4572396 7.39797964,16 L4.86504659,16 Z M18.5732357,15 C18.8496144,14.2180527 19,13.3765886 19,12.5 C19,11.6234114 18.8496144,10.7819473 18.5732357,10 L15.8022127,10 C15.930794,10.790422 16,11.6299451 16,12.5 C16,13.3700549 15.930794,14.209578 15.8022127,15 L18.5732357,15 Z M18.1349534,16 L15.6020204,16 C15.2529829,17.4572396 14.6927014,18.6953657 13.9949559,19.5750165 C15.782589,18.9446239 17.2596413,17.6558985 18.1349534,16 Z M8.21230689,15 L14.7876931,15 C14.9240019,14.2216581 15,13.3811544 15,12.5 C15,11.6188456 14.9240019,10.7783419 14.7876931,10 L8.21230689,10 C8.07599807,10.7783419 8,11.6188456 8,12.5 C8,13.3811544 8.07599807,14.2216581 8.21230689,15 Z M8.42865778,16 C9.05255412,18.3998027 10.270949,20 11.5,20 C12.729051,20 13.9474459,18.3998027 14.5713422,16 L8.42865778,16 Z M4.86504659,9 L7.39797964,9 C7.74701714,7.54276045 8.30729857,6.30463431 9.0050441,5.42498347 C7.21741102,6.05537614 5.7403587,7.34410146 4.86504659,9 Z M18.1349534,9 C17.2596413,7.34410146 15.782589,6.05537614 13.9949559,5.42498347 C14.6927014,6.30463431 15.2529829,7.54276045 15.6020204,9 L18.1349534,9 Z M8.42865778,9 L14.5713422,9 C13.9474459,6.60019727 12.729051,5 11.5,5 C10.270949,5 9.05255412,6.60019727 8.42865778,9 Z M11.5,21 C6.80557963,21 3,17.1944204 3,12.5 C3,7.80557963 6.80557963,4 11.5,4 C16.1944204,4 20,7.80557963 20,12.5 C20,17.1944204 16.1944204,21 11.5,21 Z"
+                      ></path>
+                    </svg>
+                    Русский</a
+                  >
+                </div>
+
+                <div class="languages">
+                  <div class="lang_wrapper">
+                    <ul>
+                      <li><a href="#">Čeština</a></li>
+                      <li><a href="#">Dansk</a></li>
+                      <li><a href="#">Deutsch </a></li>
+                      <li><a href="#">English</a></li>
+                      <li><a href="#">Español</a></li>
+                      <li><a href="#">Français</a></li>
+                      <li><a href="#">Italiano</a></li>
+                      <li><a href="#">日本語</a></li>
+                      <li><a href="#">한국어</a></li>
+                      <li><a href="#">Bahasa Indonesia</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="#">Norsk</a></li>
+                      <li><a href="#">Polski</a></li>
+                      <li><a href="#">Português</a></li>
+                      <li><a href="#">Русский</a></li>
+                      <li><a href="#">Svenska</a></li>
+                      <li><a href="#">ไทย</a></li>
+                      <li><a href="#">Türkçe</a></li>
+                      <li><a href="#">Українська</a></li>
+                      <li><a href="#">繁體中文</a></li>
+                      <li><a href="#">Tiếng Việt</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <button class="logout">Выйти</button>
+            </div>
+          </div>
+          <div class="bars">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
     <script src="./js/script.js"></script>
+    <script src="./js/notification.js"></script>
+    <script src="./js/inbox.js"></script>
+    <script src="./js/account.js"></script>
   </body>
 </html>
